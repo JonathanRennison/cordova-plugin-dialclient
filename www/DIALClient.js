@@ -17,7 +17,7 @@ var discoveredTerminals = {};
  * 	- readonly String X_HbbTV_InterDevSyncURL: The remote service endpoint on the discovered HbbTV terminal for inter-device synchronisation
  * 	- readonly String X_HbbTV_UserAgent: The User Agent string of the discovered HbbTV terminal
  */
-var DiscoveredTerminal = function(enum_id, friendly_name, X_HbbTV_App2AppURL, X_HbbTV_InterDevSyncURL, X_HbbTV_UserAgent, appXML){
+var DiscoveredTerminal = function(enum_id, friendly_name, X_HbbTV_App2AppURL, X_HbbTV_InterDevSyncURL, X_HbbTV_UserAgent, appXML, terminal){
     Object.defineProperty(this, "enum_id", {
         get: function () {
             return enum_id;
@@ -46,6 +46,11 @@ var DiscoveredTerminal = function(enum_id, friendly_name, X_HbbTV_App2AppURL, X_
     Object.defineProperty(this, "appXML", {
         get: function () {
             return appXML;
+        }
+    });
+    Object.defineProperty(this, "terminal", {
+        get: function () {
+            return terminal;
         }
     });
 };
@@ -86,7 +91,7 @@ var handleDeviceListSuccess = function(onDeviceListChanged) {
             var launchUrl = terminal.launchUrl;
             var oldTerminal = discoveredTerminals[launchUrl];
             var enumId = oldTerminal && oldTerminal.enum_id || terminalCounter++;
-            var newTerminal = new DiscoveredTerminal(enumId, terminal.friendlyName, terminal.HbbTV_App2AppURL, terminal.HbbTV_InterDevSyncURL, terminal.HbbTV_UserAgent, terminal.appXML);
+            var newTerminal = new DiscoveredTerminal(enumId, terminal.friendlyName, terminal.HbbTV_App2AppURL, terminal.HbbTV_InterDevSyncURL, terminal.HbbTV_UserAgent, terminal.appXML, terminal);
             discoveredTerminals[launchUrl] = newTerminal;
             discoveredTerminals[enumId] = terminal;
             res.push(newTerminal);
