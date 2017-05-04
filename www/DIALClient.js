@@ -76,15 +76,8 @@ var dialClient = function(){
     });
 };
 
-/**
- * Boolean startDiscovery(function onTerminalDiscovery)
- * callback onDeviceListChanged (deviceList[])
- */
-var startDiscovery = function(onDeviceListChanged){
-
-
-    var success = function (deviceListJSON) {
-
+var handleDeviceListSuccess = function(onDeviceListChanged) {
+    return function (deviceListJSON) {
         var deviceList = JSON && JSON.parse(deviceListJSON);
 
         var res = [];
@@ -98,39 +91,41 @@ var startDiscovery = function(onDeviceListChanged){
             discoveredTerminals[enumId] = terminal;
             res.push(newTerminal);
         }
-        onDeviceListChanged && onDeviceListChanged.call(null,res);
+        onDeviceListChanged && onDeviceListChanged.call(null,res,null);
     };
-    var error = function (code) {
-        var res = [];
-        onDeviceListChanged && onDeviceListChanged.call(null,res);
+};
+
+var handleDeviceListError = function(onDeviceListChanged) {
+    return function (code) {
+        onDeviceListChanged && onDeviceListChanged.call(null, [], code);
     };
-    exec(success, error, "DIALClient", "startDiscovery", ["HbbTV"]);
+};
+
+/**
+ * Boolean startDiscovery(function onTerminalDiscovery)
+ * callback onDeviceListChanged (deviceList[])
+ */
+var startDiscovery = function(onDeviceListChanged){
+    exec(handleDeviceListSuccess(onDeviceListChanged), handleDeviceListError(onDeviceListChanged), "DIALClient", "startDiscovery", ["HbbTV"]);
     return true;
 };
 
-
-
 /**
  * Boolean stopDiscovery()
+ * callback onCompletion ()
  */
-var stopDiscovery = function(){
-
-  exec(success, error, "DIALClient", "stopDiscovery", []);
+var stopDiscovery = function(onCompletion){
+    if (!onCompletion) onCompletion = function() { };
+    exec(onCompletion, onCompletion, "DIALClient", "stopDiscovery", []);
     return true;
 };
 
-
 /**
- * Boolean stopDiscovery()
+ * Boolean getDevices()
+ * callback deviceListCallback (deviceList[])
  */
-var getDevices = function(){
-
-  var success = function (deviceList)
-  {
-
-  }
-
-  exec(success, error, "DIALClient", "getDevices", []);
+var getDevices = function(deviceListCallback){
+    exec(handleDeviceListSuccess(deviceListCallback), handleDeviceListError(deviceListCallback), "DIALClient", "getDevices", []);
     return true;
 };
 
