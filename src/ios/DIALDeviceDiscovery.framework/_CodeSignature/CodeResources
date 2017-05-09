@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/DIALDevice.h</key>
 		<data>
-		D4Cv3LxJ+AJAk/54XntrWPmbG8M=
+		ROpYUjDDY1ZVNioVIbiSSBwXQpU=
 		</data>
 		<key>Headers/DIALDeviceDiscovery.h</key>
 		<data>
-		O8Z/VijJsy1/h6FXuxDvONKwsV4=
+		lQ/mC/lRLkIirZ41eb5zPHkLVH8=
 		</data>
 		<key>Headers/DIALDeviceDiscoveryTask.h</key>
 		<data>
-		XCgL/qwI41u4IinpWP8fIAEsUic=
+		k1qgfclN0j2qwRrpVThgnEqperU=
 		</data>
 		<key>Headers/DIALDeviceDiscoveryTaskDelegate.h</key>
 		<data>
-		gCDU6H1/aiLaXVdGuY5JyfdzaCg=
+		OZp+uqYL8EDsiKVun60XnivVy2A=
 		</data>
 		<key>Headers/DIALGlobals.h</key>
 		<data>
@@ -26,31 +26,31 @@
 		</data>
 		<key>Headers/DIALServiceDiscovery.h</key>
 		<data>
-		r+3fpePwodaQAG7/L2/Pa/em8gA=
+		MLGKivpSsVf/CjLO6sfPYRz0jzU=
 		</data>
 		<key>Headers/DeviceDescription.h</key>
 		<data>
-		5us8jLLqW/COZptSKH60bL5DJn4=
+		D0jeTk0fD1wCRd/siBl52lRcquc=
 		</data>
 		<key>Headers/SSDPService.h</key>
 		<data>
-		THc+EcFMvOx1H4nmD+b5RwUo9Tk=
+		20AT02figPW3qBERCWaSFpQGX0M=
 		</data>
 		<key>Headers/SSDPServiceDiscovery.h</key>
 		<data>
-		ZzFByRnXPvMnHoGpSVYZD+5C+1U=
+		M+XOkePIqc2ho5Hnx4lNlu1Xs4E=
 		</data>
 		<key>Headers/SSDPServiceTypes.h</key>
 		<data>
-		XqlKExj25rb6xbdQjpziJnbKXbQ=
+		2SGMTdj2xgG8IXOJCGpoZMpb6wA=
 		</data>
 		<key>Headers/utils.h</key>
 		<data>
-		cZBo6OVr3u4S2dk6e7usWoe6b50=
+		IaJ17lEnBipQZnlFTSm+dJ3YKSs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rPxffJZztRRyloGLKw5w8TEqUPk=
+		lvwm7HacHaV4WAIZxvpWrAa48Cg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,44 +63,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D4Cv3LxJ+AJAk/54XntrWPmbG8M=
+			ROpYUjDDY1ZVNioVIbiSSBwXQpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3cTUc3j1h+uf8DgYfGxUFFGo7fG6A82V6GjqxLCzLZ0=
+			KSFTE13OmLoR2nkDDPZ117HVIcR4G4Po4d/kMYf32JI=
 			</data>
 		</dict>
 		<key>Headers/DIALDeviceDiscovery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O8Z/VijJsy1/h6FXuxDvONKwsV4=
+			lQ/mC/lRLkIirZ41eb5zPHkLVH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVv0Os8KyElhfYf7IYDKjuexZBY+mITGChSj16IV00c=
+			4M8qAFxQCDocHYmb4v1+HLM2izlc/nSVUyIpwCeYRiQ=
 			</data>
 		</dict>
 		<key>Headers/DIALDeviceDiscoveryTask.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XCgL/qwI41u4IinpWP8fIAEsUic=
+			k1qgfclN0j2qwRrpVThgnEqperU=
 			</data>
 			<key>hash2</key>
 			<data>
-			w4srwW/w9ZM1MKaPq2xj5R8217TBkE+p54xmi+WsESY=
+			MlrX4aE9yarkRbQ53yyeKBJB5yvOm4GB2HNHRRRiZ2I=
 			</data>
 		</dict>
 		<key>Headers/DIALDeviceDiscoveryTaskDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gCDU6H1/aiLaXVdGuY5JyfdzaCg=
+			OZp+uqYL8EDsiKVun60XnivVy2A=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ed7O9CWd410bxu2n30viZh+2Bd2rl1EwRTdXrDD7Oe0=
+			FoGrkYftImWu5Oy3buF2/R+8hsxC0hDx/l/pciP8Gxc=
 			</data>
 		</dict>
 		<key>Headers/DIALGlobals.h</key>
@@ -118,66 +118,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r+3fpePwodaQAG7/L2/Pa/em8gA=
+			MLGKivpSsVf/CjLO6sfPYRz0jzU=
 			</data>
 			<key>hash2</key>
 			<data>
-			8KV7WKF1uAvol8xFwJ5b/wp+/a3Tc+tyuSF4evvCM/g=
+			ZSvEwUn7wrKzi0Gx55FOiRva5rgOMBiU1YEYyI4r1iY=
 			</data>
 		</dict>
 		<key>Headers/DeviceDescription.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5us8jLLqW/COZptSKH60bL5DJn4=
+			D0jeTk0fD1wCRd/siBl52lRcquc=
 			</data>
 			<key>hash2</key>
 			<data>
-			EuZltBTG6AjMXVsA0qgJ6UMZ/SquSQSTAF6h2r14Gfk=
+			QGhb8fqmbz6GQRC3UISDEBxLDoYEgNH7F4E3n2JiJA4=
 			</data>
 		</dict>
 		<key>Headers/SSDPService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			THc+EcFMvOx1H4nmD+b5RwUo9Tk=
+			20AT02figPW3qBERCWaSFpQGX0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			8EarkrMEyAJbhJekAW77kB5raNyPuNJ026ihiFuZHNg=
+			i+rxwoDy2xOIoT4AYQtQn9LC0vashg+Ut8nvKcldE4k=
 			</data>
 		</dict>
 		<key>Headers/SSDPServiceDiscovery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZzFByRnXPvMnHoGpSVYZD+5C+1U=
+			M+XOkePIqc2ho5Hnx4lNlu1Xs4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			OITjbot5yKHR3Ebs7UWStL7sp6czjXtPPPJomvVM8L4=
+			BxSkQp6wDI4pCkmYFpJim7wH1vm9coWBHbfUPo1vWmY=
 			</data>
 		</dict>
 		<key>Headers/SSDPServiceTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XqlKExj25rb6xbdQjpziJnbKXbQ=
+			2SGMTdj2xgG8IXOJCGpoZMpb6wA=
 			</data>
 			<key>hash2</key>
 			<data>
-			2uDNQN0+yTEblOUdDxRtCIG+Puz7VQh+VTPsjJRy8p0=
+			CVNkJ9kfbAzANAIkTlEOP+c2Dkj1mm/T2t2yXIXC0Yc=
 			</data>
 		</dict>
 		<key>Headers/utils.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cZBo6OVr3u4S2dk6e7usWoe6b50=
+			IaJ17lEnBipQZnlFTSm+dJ3YKSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			cg9uiJVb3oGwUU9Ovf4RsO/fO/me9Hd12N4CDrKAM+U=
+			y791DYgyIzn501zC+47+4rBsPLAFMb9q3WOXHoNzfk8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

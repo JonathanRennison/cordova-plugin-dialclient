@@ -31,7 +31,7 @@ FOUNDATION_EXPORT const unsigned char DIALDeviceDiscoveryVersionString[];
 /**
  * This dynamic library performs HbbTV app discovery using the DIAL protocol. In the first step of the discovery process, it uses the SSDPServiceDiscovery module to discover services of type DIAL_MultiScreenOrgService1. Subsequently, DIALAppDiscoveryTasks are created and launched to take over the remainder of the HbbTV app discovery: 1) the Device Description request and 2) the Application Information request.
  *
- * 
+ *
  *   Events produced:
  1. "DIALDeviceDiscoveryNotif":  an NSNotification object containing a newly discovered DIAL Device which is broadcast to other objects
  2. "DIALDeviceExpiryNotif": an NSNotification object for notifying that an HbbTV app host is off the network and the app has expired.

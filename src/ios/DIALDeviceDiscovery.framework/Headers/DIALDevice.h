@@ -1,6 +1,6 @@
 //
 //  DIAL_AppServiceEndpoint.h
-//  
+//
 //
 //  Created by Rajiv Ramdhany on 08/12/2014.
 //  Copyright (c) 2014 BBC RD. All rights reserved.
@@ -69,22 +69,22 @@ FOUNDATION_EXPORT NSString* const kDIALDevice_PresentationURLKey ;
 #pragma mark - Properties
 //------------------------------------------------------------------------------
 
-/** 
- HbbTV App host name 
+/**
+ HbbTV App host name
  */
 @property(readonly, nonatomic) NSString *DIALServer;
 
-/** 
- UPnP-advertised service name 
+/**
+ UPnP-advertised service name
  */
 @property(readonly, nonatomic) NSString *DIALUniqueServiceName;
 
-/** 
- dial version 
+/**
+ dial version
  */
 @property(readonly, nonatomic) NSString *DIALVersion;
 
-/** 
+/**
  device name
  */
 @property(readonly, nonatomic) NSString *deviceName;
@@ -116,10 +116,6 @@ FOUNDATION_EXPORT NSString* const kDIALDevice_PresentationURLKey ;
 @property(readonly, nonatomic) NSString *UDN;
 @property(readonly, nonatomic) NSString *presentationURL;
 @property(readonly, nonatomic) NSString *appXML;
-@property(readonly, nonatomic) NSString *X_2Immerse_ContextId;
-@property(readonly, nonatomic) NSString *X_2Immerse_DeviceId;
-@property(readonly, nonatomic) NSString *X_2Immerse_InterContextId;
-@property(readonly, nonatomic) NSString *X_2Immerse_InstanceId;
 
 
 

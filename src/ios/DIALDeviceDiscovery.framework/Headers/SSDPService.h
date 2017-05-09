@@ -35,8 +35,8 @@
 #pragma mark - Properties
 //------------------------------------------------------------------------------
 
-/** 
- service location 
+/**
+ service location
  */
 @property(readonly, nonatomic) NSURL *location;
 
@@ -61,7 +61,7 @@
 //------------------------------------------------------------------------------
 
 /**
- *  Init service object with header fields from an HTTP response		
+ *  Init service object with header fields from an HTTP response
  *
  *  @param headers dictionary with header fields
  *

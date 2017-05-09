@@ -1,6 +1,6 @@
 //
 //  DIALDeviceDiscoveryTaskDelegate.h
-//  
+//
 //
 //  Created by Rajiv Ramdhany on 10/12/2014.
 //  Copyright (c) 2014 BBC RD. All rights reserved.
@@ -27,7 +27,7 @@
 @class DIALDeviceDiscoveryTask;
 
 /**
- *  Protocol for DIALDeviceDiscoveryTask delegate object. Apart from this delegate mechanism, device-discovery is made known to observers via notifications (the 'DIALDeviceDiscoveryNotif' notification). 
+ *  Protocol for DIALDeviceDiscoveryTask delegate object. Apart from this delegate mechanism, device-discovery is made known to observers via notifications (the 'DIALDeviceDiscoveryNotif' notification).
  */
 @protocol DIALDeviceDiscoveryTaskDelegate <NSObject>
 

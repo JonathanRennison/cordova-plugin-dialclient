@@ -1,6 +1,6 @@
 //
 //  DeviceDescription.h
-//  
+//
 //
 //  Created by Rajiv Ramdhany on 12/08/2015.
 //  Copyright (c) 2015 BBC RD. All rights reserved.
@@ -23,9 +23,9 @@
 
 /**
  *  A description of a device discovered via UPnP (SSDP). A DeviceDescription instance is created
- *  
+ *
  */
-@interface DeviceDescription : NSObject 
+@interface DeviceDescription : NSObject
 
 /**
  *  Device type

@@ -62,8 +62,8 @@
 /**
  *   A class for discovering UPnP devices supporting a particular service type in the local network.
  *  This class listens for service advertisments on the UPnP multicast address/port and, maintains soft
- *  -state e.g. discovered service descriptions. All discovered services are held in an internal services 
- *  table. Changes in services table membership are notified to a delegate via the 
+ *  -state e.g. discovered service descriptions. All discovered services are held in an internal services
+ *  table. Changes in services table membership are notified to a delegate via the
  *  SSDPServiceDiscoveryDelegate protocol.
  */
 @interface SSDPServiceDiscovery : NSObject

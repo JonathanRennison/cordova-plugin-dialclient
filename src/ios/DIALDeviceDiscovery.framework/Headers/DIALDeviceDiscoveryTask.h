@@ -72,18 +72,18 @@ enum DIALDeviceDiscoveryTaskStatus{
 //------------------------------------------------------------------------------
 /**
  * Class to represent an device discovery task. A task is launched when a service of this type "urn:dial-multiscreen-org:service:dial:1" is discovered via SSDP (by the SSDPServiceDiscovery module).
-   An M-SEARCH request sent by the SSDPServiceDiscovery object results in a response containing a LOCATION header 
- containing an absolute HTTP URL for the UPnP description of the root device. 
- 
+   An M-SEARCH request sent by the SSDPServiceDiscovery object results in a response containing a LOCATION header
+ containing an absolute HTTP URL for the UPnP description of the root device.
+
  On receipt of the M-SEARCH response, a DIALDeviceDiscoveryTask is created and it issues an HTTP GET request to the URL received in the LOCATION header of the M-SEARCH response.
- 
+
  On receipt of a valid HTTP GET for the device description, a DIAL server SHALL respond with an HTTP response containing the UPnP device description. If the request is successful, the HTTP response contains an additional header field, Application­URL. This URL identifies the DIAL REST Service and is referred to as the DIAL REST Service URL.
- 
+
  The DIAL REST service represents applications (for example Netflix, YouTube, etc.) as resources identified by URLs. Operations related to an application are performed by issuing HTTP requests against the URL for that application. This URL is known as an Application Resource URL.
  The Application Resource URL for an application is constructed by concatenating the DIAL REST Service URL, a single slash character (‘/’) and the Application Name (See appName property).
- 
+
  The progress of the discovery task can be checked via the **status** property.
- 
+
  */
 @interface DIALDeviceDiscoveryTask : NSObject <NSURLConnectionDelegate, NSXMLParserDelegate>
 

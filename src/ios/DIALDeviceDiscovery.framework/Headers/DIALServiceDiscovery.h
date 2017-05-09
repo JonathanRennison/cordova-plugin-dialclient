@@ -1,6 +1,6 @@
 //
 //  DIALServiceDiscovery.h
-//  
+//
 //
 //  Created by Rajiv Ramdhany on 01/12/2014.
 //  Copyright (c) 2014 BBC RD. All rights reserved.
@@ -76,7 +76,7 @@ extern NSString * const kDIALDeviceExpiryNotification;
   *   Events produced: {DIALAppDiscoveryNotif, DIALAppExpiryNotif}
         1. "DIALDeviceDiscoveryNotif":  an NSNotification object containing a newly discovered HbbTV app, which is broadcast to other objects
         2. "DIALDeviceExpiryNotif": an NSNotification object for notifying that an HbbTV app host is off the network and the app has expired.
-  *   
+  *
         Events required: None.
   */
 @interface DIALServiceDiscovery: NSObject <SSDPServiceDiscoveryDelegate, DIALDeviceDiscoveryTaskDelegate>
