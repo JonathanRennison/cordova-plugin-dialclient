@@ -12,10 +12,10 @@
       </config-file>
       <header-file src="src/ios/DIALClient.h" />
       <source-file src="src/ios/DIALClient.m" />
-      <framework src="src/ios/AsyncSocket.framework" custom="true"/>
-      <framework src="src/ios/SimpleLogger.framework" custom="true"/>
-      <framework src="src/ios/JSONModelFramework.framework" custom="true"/>
-      <framework src="src/ios/DIALDeviceDiscovery.framework" custom="true"/>
+      <framework src="src/ios/AsyncSocket.framework" custom="true" embed="true"/>
+      <framework src="src/ios/SimpleLogger.framework" custom="true" embed="true"/>
+      <framework src="src/ios/JSONModelFramework.framework" custom="true" embed="true"/>
+      <framework src="src/ios/DIALDeviceDiscovery.framework" custom="true" embed="true"/>
     </platform>
     <hook type="after_plugin_install" src="hooks/add_embedded_ios_frameworks.js" />
 </plugin>
