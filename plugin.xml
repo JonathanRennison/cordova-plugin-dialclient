@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-dialclient" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-dialclient" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>DIALClient</name>
     <js-module name="DIALClient" src="www/DIALClient.js">
         <clobbers target="DIALClient" />
     </js-module>
-      <platform name="ios">
+    <dependency id="cordova-plugin-cocoapod-support"/>
+    <platform name="ios">
+      <pods-config ios-min-version="9.0" use-frameworks="true">
+      </pods-config>
       <config-file target="config.xml" parent="/*">
         <feature name="DIALClient">
           <param name="ios-package" value="DIALClient" />
@@ -12,10 +15,6 @@
       </config-file>
       <header-file src="src/ios/DIALClient.h" />
       <source-file src="src/ios/DIALClient.m" />
-      <framework src="src/ios/AsyncSocket.framework" custom="true"/>
-      <framework src="src/ios/SimpleLogger.framework" custom="true"/>
-      <framework src="src/ios/JSONModelFramework.framework" custom="true"/>
-      <framework src="src/ios/DIALDeviceDiscovery.framework" custom="true"/>
+      <pod name="dial-discovery-ios" git="https://github.com/bbc/dial-discovery-ios.git" branch="master" />
     </platform>
-    <hook type="after_plugin_install" src="hooks/add_embedded_ios_frameworks.js" />
 </plugin>
